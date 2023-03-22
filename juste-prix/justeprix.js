@@ -97,7 +97,5 @@ function endGame (gagne) {
         let audio = new Audio('./audio/loose.wav')
         audio.play()
     }
-    gamePropalDiv.style.display = "none"
-    clearInterval(compteurInterval)
 }
 

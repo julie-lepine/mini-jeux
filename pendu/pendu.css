@@ -8,6 +8,7 @@ table {
     text-align: center;
     font-size: 40px;
     margin-bottom: 1em;
+    margin-top: 0.5em;
 }
 
 #keyboard {
@@ -23,4 +24,36 @@ table {
     margin: 0.2em;
     background-color: white;
     cursor: pointer;
+}
+
+#imgPenduDiv {
+    background: url('./sprite.png');
+    width: 145px;
+    height: 184px;
+    margin: 0.5em auto;
+}
+
+#imgPenduDiv.etat0 {
+    background-position: -0px;
+}
+#imgPenduDiv.etat1 {
+    background-position: -143px;
+}
+#imgPenduDiv.etat2 {
+    background-position: -285px;
+}
+#imgPenduDiv.etat3 {
+    background-position: -428px;
+}
+#imgPenduDiv.etat4 {
+    background-position: -570px;
+}
+#imgPenduDiv.etat5 {
+    background-position: -713px;
+}
+#imgPenduDiv.etat6 {
+    background-position: -856px;
+}
+#imgPenduDiv.etat6 {
+    background-position: -999px;
 }
