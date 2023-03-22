@@ -26,6 +26,10 @@ table {
     cursor: pointer;
 }
 
+#keyboard .letterKeyboard:hover {
+    background-color: rgb(167, 165, 165);
+}
+
 #imgPenduDiv {
     background: url('./sprite.png');
     width: 145px;
@@ -56,4 +60,21 @@ table {
 }
 #imgPenduDiv.etat6 {
     background-position: -999px;
+}
+
+.fa-triangle-exclamation {
+    color: red;
+}
+
+.fa-play {
+    color: green;
+}
+
+#beginGame {
+    padding: 1rem 1.2rem;
+}
+
+.dark {
+    background-color: black;
+    color: black;
 }
