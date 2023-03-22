@@ -1,0 +1,55 @@
+body {
+  max-width: 500px;
+  margin: auto;    
+  padding: 5svh;
+}
+
+.game {
+    text-align: center;
+}
+
+.bandeau {
+    max-height: 50svh;
+}
+
+#beginGame {
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #687cfa;
+    border: 3px solid;
+    padding: 4svh;
+    border-radius: 20px 7px;
+    margin: 2svh 0;
+}
+
+.reboursDiv {
+    display: inline-block;
+}
+
+.danger {
+    color: red;
+    animation: suspens 1s infinite;
+}
+
+@keyframes suspens {
+    0%, 100% {
+        font-size: 15px;
+    }
+    50% {
+        font-size: 18px;
+    }
+
+}
+
+.warning {
+    color: orange;
+}
+
+.ok {
+    color: green;
+}
+
+#gamePropalDiv {
+    display: none;
+}
+
