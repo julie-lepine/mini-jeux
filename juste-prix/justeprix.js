@@ -1,4 +1,5 @@
 import { Confetti } from "../lib/confetti/confetti.js";
+import { Utils } from "../lib/Utils/utils.js";
 
 let numberToFind = 0
 const resultDiv = document.getElementById('resultDiv')
@@ -14,11 +15,6 @@ const gamePropalDiv = document.getElementById('gamePropalDiv')
 document.getElementById('beginGame').addEventListener('click', function () {
     launchGame()
 })
-
-// Générer chiffre aléatoire : 
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max)
-}
 
 document.getElementById('checkPropalButton').addEventListener('click', function () {
     checkPropal()
@@ -54,7 +50,7 @@ function checkPropal() {
 function launchGame() {
     Confetti.stopAnimationConfetti()
     // récupérer chiffre alétoire
-    numberToFind = getRandomInt(50)
+    numberToFind = Utils.getRandomInt(50)
     // essai pour afficher dans le html le chiffre max 
     //console.log(numberToFind.splice(1)); le pb de ça est que ça risque de changer la valeur de numberToFind
     tempsRestant = 20
