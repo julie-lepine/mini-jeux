@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Jeu du mémory</title>
+</head>
+
+<body>
+    <div id="allConfettis">
+    </div>
+
+    <div class="welcomeText">
+        <h1>Memory Disney</h1>
+        <p>Combien de paires pour jouer ?</p>
+        <div class="enteteJeu">
+            <div>
+                <div class="gameInput">
+                    <input id="nbCardInput" type="number" max="8" min="2" value="8">
+                    <div class="moreAndLessCards">
+                        <button id="moreCards">+</button>
+                        <button id="lessCards">-</button>
+                    </div>
+                </div>
+                <button id="playButton"><span>Jouer</span></button>
+            </div>
+            <div class="scoreBoard">
+                <div>
+                    <div>Score actuel : <span id="nbCoupsCurrent"></span></div>
+                </div>
+                <div>
+                    <div>Meilleur score : <span id="BestScore"></span></div>
+                </div>
+                <div>
+                    <div>Score moyen : <span id="avgScore"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameBoard">
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
