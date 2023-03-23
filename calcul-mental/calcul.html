@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,31 @@
     <link rel="stylesheet" href="./calcul.css">
     <title>Challenge calcul mental</title>
 </head>
+
 <body>
     <h1>Challenge de calcul mental</h1>
     <h2>Ferez-vous le meilleur score ?</h2>
 
+    <div>
+        <label for="nbSecondsGame">Compte à rebours en secondes :</label> <br>
+        <input type="number" id="nbSecondsGame">
+    </div>
+    <div>
+        <label for="maxNumberCalc">Nombre maximum à calculer :</label> <br>
+        <input type="number" id="maxNumberCalc">
+    </div>
+
+    <button id="go" onclick="launchGame()">GOOO</button>
+
     <!-- Afficher ici le minuteur -->
-    <div id="minuteur"></div>
-    
+    <div class="showPlayingDiv" id="minuteur"></div>
+
     <!-- Afficher ici le calcul aléatoire proposé -->
-    <div id="calcul"></div>
-    
-    <INPUT type="number" id="propal"></INPUT><button id="validPropal">valider</button>
+    <div class="showPlayingDiv" id="calcul"></div>
+
+    <div id="propalDiv" class="showPlayingDiv">
+        <input type="number" id="propal"></input><button id="validPropal">valider</button>
+    </div>
 
     <!-- Zone de communication avec le joueur -->
     <div id="messenger"></div>
@@ -26,4 +41,5 @@
 
     <script src="./calcul.js"></script>
 </body>
+
 </html>

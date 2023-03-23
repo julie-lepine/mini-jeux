@@ -64,7 +64,7 @@ function generateKeyboard() {
                 Array.from(allTd).forEach(td => {
                     if(td.dataset.letter == letter) {
                         td.innerHTML = letter
-                        let audio = new Audio('./audio/win.wav')
+                        let audio = new Audio('./audio/win.mp3')
                         audio.play()
                         cptFindedLetters++
                     }
@@ -76,6 +76,8 @@ function generateKeyboard() {
                     document.getElementById('imgPenduDiv').className = ''
                 }
             } else {
+                let audio = new Audio('./audio/error.mp3')
+                audio.play()
                 cptErreurs++
                 cptErreursDiv.innerHTML = cptErreurs
                 // ajout de l'image du pendu en fonction du nb d'erreurs
@@ -83,8 +85,6 @@ function generateKeyboard() {
                 imgPendu.className = ''
                 imgPendu.classList.add('etat'+cptErreurs)
 
-                let audio = new Audio('./audio/error.mp3')
-                audio.play()
                 if(cptErreurs >= 6) {
                     // on a perdu
                     cptErreursDiv.innerHTML = "Perdu !"
