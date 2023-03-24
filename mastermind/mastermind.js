@@ -109,11 +109,19 @@ function generateSelect(target) {
     let mySelect = document.createElement("select")
     colors.forEach(color => {
         let colorOption = document.createElement("option")
-        colorOption.innerHTML = color
+        // colorOption.innerHTML = color
         colorOption.value = color
         colorOption.style.backgroundColor = color
         mySelect.appendChild(colorOption)
     })
+    mySelect.style.backgroundColor = mySelect.value
+
+    // permet d'utiliser la couleur pour l'afficher dans le select
+    mySelect.addEventListener('change', (e) => {
+        e.target.style.backgroundColor = e.target.value
+    })
+
+    // permet de conserver la couleur après avoir entré sur valider
     target.appendChild(mySelect)
 }
 
