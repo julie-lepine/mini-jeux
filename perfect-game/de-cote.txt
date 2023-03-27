@@ -1,0 +1,119 @@
+.perso.perso1 {
+  /* alakazam */
+  background-position: 0 0;
+}
+
+.perso.perso2 {
+  /* carapuce */
+  background-position: 250px 0px;
+}
+
+.perso.perso3 {
+  /* mystherbe */
+  background-position: 200px 0px;
+}
+
+.perso.perso4 {
+  /* nosferapti */
+  background-position: 150px 0px;
+}
+
+.perso.perso5 {
+  /* metamorph */
+  background-position: 100px 0px;
+}
+
+.perso.perso6 {
+  /* lipoutou */
+  background-position: 50px 0px;
+}
+
+.perso.perso7 {
+  /* caninos */
+  background-position: 0 150px;
+}
+
+.perso.perso8 {
+  /* onix */
+  background-position: 250px 150px;
+}
+
+.perso.perso9 {
+  /* salameche */
+  background-position: 200px 150px;
+}
+
+.perso.perso10 {
+  /* tetard */
+  background-position: 150px 150px;
+}
+
+.perso.perso11 {
+  /* rondoudou */
+  background-position: 100px 150px;
+}
+
+.perso.perso12 {
+  /* mewto */
+  background-position: 50px 149px;
+}
+
+.perso.perso13 {
+  /* miaouss */
+  background-position: 0 100px;
+}
+
+.perso.perso14 {
+  /* psychokwak */
+  background-position: 250px 100px;
+}
+
+.perso.perso15 {
+  /* ramoloss */
+  background-position: 200px 100px;
+}
+
+.perso.perso16 {
+  /* ponyta */
+  background-position: 150px 100px;
+}
+
+.perso.perso17 {
+  /* dracaufeu */
+  background-position: 100px 100px;
+}
+
+.perso.perso18 {
+  /* tadmorv */
+  background-position: 50px 100px;
+}
+
+.perso.perso19 {
+  /* pikachu */
+  background-position: 0 50px;
+}
+
+.perso.perso20 {
+  /* triopiqueur */
+  background-position: 250px 50px;
+}
+
+.perso.perso21 {
+  /* voltorbe */
+  background-position: 200px 50px;
+}
+
+.perso.perso22 {
+  /* bulbi */
+  background-position: 150px 50px;
+}
+
+.perso.perso23 {
+  /* spectrum */
+  background-position: 100px 49px;
+}
+
+.perso.perso24 {
+  /* canarticho */
+  background-position: 50px 50px;
+}/*# sourceMappingURL=perfect-game.css.map */ 

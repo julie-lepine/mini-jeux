@@ -1,0 +1,22 @@
+@use 'sass:math';
+
+#cardsPlateau {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .perso {
+    background: url(./img/sprite.jpg);
+    height: 50px;
+    width: 50px;
+  }
+}
+
+// faire en sorte de calculer automatiquement les width
+@for $i from 1 through 24 {
+  .perso.perso#{$i} {
+    $left : $i*50px;
+    $top : math.ceil(calc($i/6))*50px;
+    background-position: $left $top !important;
+  }
+}
