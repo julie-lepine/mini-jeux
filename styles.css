@@ -1,0 +1,9 @@
+.returnHome {
+  margin: 4rem auto;
+}
+.returnHome a {
+  text-decoration: none;
+}
+.returnHome:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

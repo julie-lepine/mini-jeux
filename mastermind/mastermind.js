@@ -97,6 +97,7 @@ function generateLineSelect() {
     // générer un btn ok pour valider la propal
     let btn = document.createElement("button")
     btn.innerText = "Valider"
+    btn.classList.add("validationBtn")
     line.appendChild(btn)
     btn.addEventListener('click', () => {
         checkPropal()

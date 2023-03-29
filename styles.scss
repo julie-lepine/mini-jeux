@@ -1,0 +1,9 @@
+.returnHome {
+    margin: 4rem auto;
+    a {
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
