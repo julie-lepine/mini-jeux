@@ -1,119 +1,27 @@
-.perso.perso1 {
-  /* alakazam */
-  background-position: 0 0;
+<!-- HTML !-->
+<button class="button-33" role="button">Button 33</button>
+
+/* CSS */
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.perso.perso2 {
-  /* carapuce */
-  background-position: 250px 0px;
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
 }
-
-.perso.perso3 {
-  /* mystherbe */
-  background-position: 200px 0px;
-}
-
-.perso.perso4 {
-  /* nosferapti */
-  background-position: 150px 0px;
-}
-
-.perso.perso5 {
-  /* metamorph */
-  background-position: 100px 0px;
-}
-
-.perso.perso6 {
-  /* lipoutou */
-  background-position: 50px 0px;
-}
-
-.perso.perso7 {
-  /* caninos */
-  background-position: 0 150px;
-}
-
-.perso.perso8 {
-  /* onix */
-  background-position: 250px 150px;
-}
-
-.perso.perso9 {
-  /* salameche */
-  background-position: 200px 150px;
-}
-
-.perso.perso10 {
-  /* tetard */
-  background-position: 150px 150px;
-}
-
-.perso.perso11 {
-  /* rondoudou */
-  background-position: 100px 150px;
-}
-
-.perso.perso12 {
-  /* mewto */
-  background-position: 50px 149px;
-}
-
-.perso.perso13 {
-  /* miaouss */
-  background-position: 0 100px;
-}
-
-.perso.perso14 {
-  /* psychokwak */
-  background-position: 250px 100px;
-}
-
-.perso.perso15 {
-  /* ramoloss */
-  background-position: 200px 100px;
-}
-
-.perso.perso16 {
-  /* ponyta */
-  background-position: 150px 100px;
-}
-
-.perso.perso17 {
-  /* dracaufeu */
-  background-position: 100px 100px;
-}
-
-.perso.perso18 {
-  /* tadmorv */
-  background-position: 50px 100px;
-}
-
-.perso.perso19 {
-  /* pikachu */
-  background-position: 0 50px;
-}
-
-.perso.perso20 {
-  /* triopiqueur */
-  background-position: 250px 50px;
-}
-
-.perso.perso21 {
-  /* voltorbe */
-  background-position: 200px 50px;
-}
-
-.perso.perso22 {
-  /* bulbi */
-  background-position: 150px 50px;
-}
-
-.perso.perso23 {
-  /* spectrum */
-  background-position: 100px 49px;
-}
-
-.perso.perso24 {
-  /* canarticho */
-  background-position: 50px 50px;
-}/*# sourceMappingURL=perfect-game.css.map */ 

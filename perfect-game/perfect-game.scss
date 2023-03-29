@@ -1,17 +1,133 @@
 @use 'sass:math';
 
-#cardsPlateau {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: auto;
+  margin: 15% 25%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  .modal-header h2 {
+    margin: 0;
+    padding: 1rem;
+    background-color: grey;
+  }
+
+  .modal-content, .modal-footer {
+    background-color: #999999;
+    padding: 20px;
+  }
+}
+
+/* The Modal Close Button */
+.close {
+  color: purple;
+  float: right;
+  font-size: 28px;
+  padding-right: 1rem;
+  font-weight: bold;
+   &:hover,
+   &:focus {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+/* Modal Restart btn */
+#restartBtn {
+    background-color: rgb(95, 12, 95);
+    border-radius: 100px;
+    box-shadow: rgba(92, 21, 92, .2) 0 -25px 18px -14px inset,rgba(92, 21, 92, .15) 0 1px 2px,rgba(92, 21, 92, .15) 0 2px 4px,rgba(92, 21, 92, .15) 0 4px 8px,rgba(92, 21, 92, .15) 0 8px 16px,rgba(92, 21, 92, .15) 0 16px 32px;
+    color: rgb(236, 143, 236);
+    cursor: pointer;
+    display: inline-block;
+    font-family:CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+#restartBtn:hover {
+  box-shadow: rgba(146, 35, 146,.35) 0 -25px 18px -14px inset,rgba(146, 35, 146,.25) 0 1px 2px,rgba(146, 35, 146,.25) 0 2px 4px,rgba(146, 35, 146,.25) 0 4px 8px,rgba(146, 35, 146,.25) 0 8px 16px,rgba(146, 35, 146,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+body {
+  text-align: center;
+  font-family: 'Neuropol x', sans-serif;
+
+  h1 {
+    border-bottom: 2px solid purple;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    width: 60%;
+    margin: 0 auto;  
+  }
+}
+
+#newGameBtn {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 2rem;
+  padding: 15px 20px 15px 20px;
+  background-color: lightgrey;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: purple;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+
+  &:active, &:hover {
+    background-color: rgb(189, 188, 188);
+    box-shadow: none;
+    position: relative;
+    top: .2em;
+  }
+}
+
+.score {
+  margin: 5px;
+  padding: 5px;
 }
 
 #elementToFind {
   height: 50px;
   width: 50px;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: 5px;
   border: 5px solid purple;
+  border-radius: 5px;
+  font-size: 3rem;
+}
+
+#cardsPlateau {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .perso {
@@ -28,10 +144,10 @@
 
       &.hidden {
         background: url('./img/question.png');
-        // pb que la carte 1: alakazam s'affiche quand même, le bg-p ne change rien
         background-position: 0 !important;
         cursor: pointer;
         border-radius: 50px;
+
         &:hover {
           background-color: purple;
         }
@@ -40,11 +156,6 @@
   }
 }
 
-.score {
-  margin: 5px;
-  padding: 5px;
-}
-
-#perdu {
-  display: none;
+.reboursDiv {
+  display: inline-block;
 }

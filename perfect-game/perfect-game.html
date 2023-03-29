@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./perfect-game.css">
-    <title>Le perfect game</title>
+    <title>Perfect game</title>
 </head>
+
 <body>
-    <h1>Le perfect game</h1> <button id="newGameBtn">New Game</button>
+    <h1>Perfect game</h1> <button id="newGameBtn">New Game</button>
 
     <div class="score">Score : <span id="nbToursGagnesSpan"></span></div>
-    <div id="perdu">Perdu !</div>
+
     <div id="elementToFind"></div>
 
     <div id="cardsPlateau"></div>
 
+    <div class="modal" id="myModal" aria-hidden="true">
+        <div class="modal-overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="myModal-title">
+                <header class="modal-header">
+                    <h2 class="modal-title" id="myModal-title">
+                        Perdu !
+                    </h2>
+                </header>
+                <main class="modal-content" id="myModal-content">
+                    <p>Vous avez fait <span id="nbToursGagnesModal"></span> point(s) !</p>
+                    <p>Pour recommencer, cliquer sur le bouton ci-dessous.</p>
+                    <p>( Ou cliquez sur la croix et ciao bye ! )</p>
+                </main>
+                <footer class="modal-footer">
+                    <button id="restartBtn">Recommencer</button>
+                    <span class="close" data-micromodal-close aria-label="Close this dialog modal">&times;</sp>
+                </footer>
+            </div>
+        </div>
+    </div>
+
     <script type="module" src="./perfect-game.js"></script>
+    <script type="module" src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 </body>
+
 </html>
