@@ -2,21 +2,49 @@
 
 #cardsPlateau {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
 
-  .perso {
-    background: url(./img/sprite.jpg);
-    height: 50px;
-    width: 50px;
+#elementToFind {
+  height: 50px;
+  width: 50px;
+  margin: 20px auto;
+  padding: 5px;
+  border: 5px solid purple;
+}
+
+.perso {
+  background: url(./img/sprite.jpg);
+  height: 50px;
+  width: 50px;
+
+  // faire en sorte de calculer automatiquement les width
+  @for $i from 0 through 24 {
+    &.perso#{$i} {
+      $left : $i*50px;
+      $top : math.ceil(calc($i/6))*50px;
+      background-position: $left $top !important;
+
+      &.hidden {
+        background: url('./img/question.png');
+        // pb que la carte 1: alakazam s'affiche quand même, le bg-p ne change rien
+        background-position: 0 !important;
+        cursor: pointer;
+        border-radius: 50px;
+        &:hover {
+          background-color: purple;
+        }
+      }
+    }
   }
 }
 
-// faire en sorte de calculer automatiquement les width
-@for $i from 1 through 24 {
-  .perso.perso#{$i} {
-    $left : $i*50px;
-    $top : math.ceil(calc($i/6))*50px;
-    background-position: $left $top !important;
-  }
+.score {
+  margin: 5px;
+  padding: 5px;
+}
+
+#perdu {
+  display: none;
 }

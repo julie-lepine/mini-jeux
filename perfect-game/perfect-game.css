@@ -1,106 +1,328 @@
 #cardsPlateau {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
-#cardsPlateau .perso {
+
+#elementToFind {
+  height: 50px;
+  width: 50px;
+  margin: 20px auto;
+  padding: 5px;
+  border: 5px solid purple;
+}
+
+.perso {
   background: url(./img/sprite.jpg);
   height: 50px;
   width: 50px;
 }
-
+.perso.perso0 {
+  background-position: 0px 0px !important;
+}
+.perso.perso0.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso0.hidden:hover {
+  background-color: purple;
+}
 .perso.perso1 {
   background-position: 50px 50px !important;
 }
-
+.perso.perso1.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso1.hidden:hover {
+  background-color: purple;
+}
 .perso.perso2 {
   background-position: 100px 50px !important;
 }
-
+.perso.perso2.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso2.hidden:hover {
+  background-color: purple;
+}
 .perso.perso3 {
   background-position: 150px 50px !important;
 }
-
+.perso.perso3.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso3.hidden:hover {
+  background-color: purple;
+}
 .perso.perso4 {
   background-position: 200px 50px !important;
 }
-
+.perso.perso4.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso4.hidden:hover {
+  background-color: purple;
+}
 .perso.perso5 {
   background-position: 250px 50px !important;
 }
-
+.perso.perso5.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso5.hidden:hover {
+  background-color: purple;
+}
 .perso.perso6 {
   background-position: 300px 50px !important;
 }
-
+.perso.perso6.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso6.hidden:hover {
+  background-color: purple;
+}
 .perso.perso7 {
   background-position: 350px 100px !important;
 }
-
+.perso.perso7.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso7.hidden:hover {
+  background-color: purple;
+}
 .perso.perso8 {
   background-position: 400px 100px !important;
 }
-
+.perso.perso8.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso8.hidden:hover {
+  background-color: purple;
+}
 .perso.perso9 {
   background-position: 450px 100px !important;
 }
-
+.perso.perso9.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso9.hidden:hover {
+  background-color: purple;
+}
 .perso.perso10 {
   background-position: 500px 100px !important;
 }
-
+.perso.perso10.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso10.hidden:hover {
+  background-color: purple;
+}
 .perso.perso11 {
   background-position: 550px 100px !important;
 }
-
+.perso.perso11.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso11.hidden:hover {
+  background-color: purple;
+}
 .perso.perso12 {
   background-position: 600px 100px !important;
 }
-
+.perso.perso12.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso12.hidden:hover {
+  background-color: purple;
+}
 .perso.perso13 {
   background-position: 650px 150px !important;
 }
-
+.perso.perso13.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso13.hidden:hover {
+  background-color: purple;
+}
 .perso.perso14 {
   background-position: 700px 150px !important;
 }
-
+.perso.perso14.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso14.hidden:hover {
+  background-color: purple;
+}
 .perso.perso15 {
   background-position: 750px 150px !important;
 }
-
+.perso.perso15.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso15.hidden:hover {
+  background-color: purple;
+}
 .perso.perso16 {
   background-position: 800px 150px !important;
 }
-
+.perso.perso16.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso16.hidden:hover {
+  background-color: purple;
+}
 .perso.perso17 {
   background-position: 850px 150px !important;
 }
-
+.perso.perso17.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso17.hidden:hover {
+  background-color: purple;
+}
 .perso.perso18 {
   background-position: 900px 150px !important;
 }
-
+.perso.perso18.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso18.hidden:hover {
+  background-color: purple;
+}
 .perso.perso19 {
   background-position: 950px 200px !important;
 }
-
+.perso.perso19.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso19.hidden:hover {
+  background-color: purple;
+}
 .perso.perso20 {
   background-position: 1000px 200px !important;
 }
-
+.perso.perso20.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso20.hidden:hover {
+  background-color: purple;
+}
 .perso.perso21 {
   background-position: 1050px 200px !important;
 }
-
+.perso.perso21.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso21.hidden:hover {
+  background-color: purple;
+}
 .perso.perso22 {
   background-position: 1100px 200px !important;
 }
-
+.perso.perso22.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso22.hidden:hover {
+  background-color: purple;
+}
 .perso.perso23 {
   background-position: 1150px 200px !important;
 }
-
+.perso.perso23.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso23.hidden:hover {
+  background-color: purple;
+}
 .perso.perso24 {
   background-position: 1200px 200px !important;
+}
+.perso.perso24.hidden {
+  background: url("./img/question.png");
+  background-position: 0 !important;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.perso.perso24.hidden:hover {
+  background-color: purple;
+}
+
+.score {
+  margin: 5px;
+  padding: 5px;
+}
+
+#perdu {
+  display: none;
 }/*# sourceMappingURL=perfect-game.css.map */
