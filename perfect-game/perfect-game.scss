@@ -70,17 +70,16 @@ body {
   text-align: center;
   font-family: 'Neuropol x', sans-serif;
 
+  header {
+    margin: 2rem auto;
+    width: 50%;
+    text-align: center;
+  }
+
   h1 {
     border-bottom: 2px solid purple;
     margin-bottom: 4rem;
-    padding-bottom: 2rem;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  body {
-    width: 60%;
-    margin: 0 auto;  
+    padding-bottom: 1rem;
   }
 }
 

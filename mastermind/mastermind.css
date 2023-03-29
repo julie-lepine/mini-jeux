@@ -7,7 +7,7 @@ body header {
   width: 50%;
   text-align: center;
 }
-body h1 {
+body header h1 {
   margin-bottom: 4rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #a7d89e;

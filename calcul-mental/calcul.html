@@ -6,38 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./calcul.css">
+    <link rel="stylesheet" href="../styles.css">
     <title>Challenge calcul mental</title>
 </head>
 
 <body>
-    <h1>Challenge de calcul mental</h1>
-    <h2>Ferez-vous le meilleur score ?</h2>
+    <header>
+        <h1>Challenge de calcul mental</h1>
+        <h2>Ferez-vous le meilleur score ?</h2>
+    </header>
+    <main>
+        <div class="initilisation">
+            <h3>Choisissez votre niveau de difficulté</h3>
+            <div class="time">
+                <label for="nbSecondsGame">Compte à rebours en secondes :</label> 
+                <input type="number" id="nbSecondsGame">
+            </div>
+            <div class="number">
+                <label for="maxNumberCalc">Nombre maximum à calculer :</label> 
+                <input type="number" id="maxNumberCalc">
+            </div>
+        </div>
 
-    <div>
-        <label for="nbSecondsGame">Compte à rebours en secondes :</label> <br>
-        <input type="number" id="nbSecondsGame">
-    </div>
-    <div>
-        <label for="maxNumberCalc">Nombre maximum à calculer :</label> <br>
-        <input type="number" id="maxNumberCalc">
-    </div>
+        <button id="go" onclick="launchGame()">gooo</button>
 
-    <button id="go" onclick="launchGame()">GOOO</button>
+        <div class="gameActions">
+            <!-- Afficher ici le minuteur -->
+            <div class="showPlayingDiv" id="minuteur"></div>
+    
+            <!-- Afficher ici le calcul aléatoire proposé -->
+            <div class="showPlayingDiv" id="calcul"></div>
 
-    <!-- Afficher ici le minuteur -->
-    <div class="showPlayingDiv" id="minuteur"></div>
+            <div id="propalDiv" class="showPlayingDiv">
+                <input type="number" id="propal"></input>
+                <button id="validPropal">valider</button>
+            </div>
+        </div>
 
-    <!-- Afficher ici le calcul aléatoire proposé -->
-    <div class="showPlayingDiv" id="calcul"></div>
+        <div class="communicationZone">
+            <!-- Zone de communication avec le joueur -->
+            <div id="messenger"></div>
+    
+            <div id="scoreZone"></div>
+        </div>
+    </main>
 
-    <div id="propalDiv" class="showPlayingDiv">
-        <input type="number" id="propal"></input><button id="validPropal">valider</button>
-    </div>
-
-    <!-- Zone de communication avec le joueur -->
-    <div id="messenger"></div>
-
-    <div id="scoreZone"></div>
+    <footer>
+        <div class="returnHome"><a href="../index.html">retour accueil</a></div>
+    </footer>
 
     <script src="./calcul.js"></script>
 </body>

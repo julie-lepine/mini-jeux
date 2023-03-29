@@ -66,18 +66,17 @@ body {
   text-align: center;
   font-family: "Neuropol x", sans-serif;
 }
+body header {
+  margin: 2rem auto;
+  width: 50%;
+  text-align: center;
+}
 body h1 {
   border-bottom: 2px solid purple;
   margin-bottom: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 576px) {
-  body {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
 #newGameBtn {
   text-align: center;
   display: inline-block;

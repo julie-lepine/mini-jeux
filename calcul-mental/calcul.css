@@ -1,16 +1,145 @@
-#minuteur {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.showPlayingDiv {
-    display: none;
-}
-
 .goodAnswer {
-    color: green;
+  color: green;
 }
 
 .badAnswer {
-    color: red;
+  color: red;
 }
+
+body {
+  background-color: #ab9071;
+  font-family: "Basier circle", -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header {
+  margin: 2rem auto;
+  width: 50%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
+header h1 {
+  color: #EADD79;
+}
+header h2 {
+  border-bottom: 2px solid #79714f;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+main {
+  width: 50%;
+  margin: 2rem auto;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+}
+main .initilisation {
+  border: 1px solid #EADD79;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+main .initilisation h3 {
+  font-size: 1.1rem;
+}
+main .initilisation .time input,
+main .initilisation .number input {
+  width: 30%;
+  margin: 0.5rem 0;
+}
+@media screen and (max-width: 768px) {
+  main .initilisation .time input,
+  main .initilisation .number input {
+    width: 80%;
+  }
+}
+main #go {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 2rem 0;
+}
+main #go:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+@media (min-width: 768px) {
+  main #go {
+    padding: 0.25em 0.75em;
+  }
+}
+main .gameActions #minuteur,
+main .gameActions #calcul {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+main .gameActions .showPlayingDiv {
+  display: none;
+}
+main .gameActions #validPropal {
+  background-color: #79714F;
+  border: 0 solid #e2e8f0;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #eadd79;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.5rem 0.9rem !important;
+  margin: 0 1rem;
+  text-align: center;
+  -webkit-text-decoration: none #0d172a solid;
+          text-decoration: none #0d172a solid;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+main .gameActions #validPropal:hover {
+  background-color: #b0815e;
+  color: #fff;
+}
+@media (min-width: 768px) {
+  main .gameActions #validPropal {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+main .communicationZone {
+  background-color: #947d62;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+
+footer {
+  text-align: center;
+}
+footer a {
+  font-size: 1.3rem;
+  color: #a7d89e;
+}/*# sourceMappingURL=calcul.css.map */
