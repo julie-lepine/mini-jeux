@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./justeprix.css">
     <link rel="stylesheet" href="../lib/confetti/confetti.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles.css">
-    <title>Le Juste Prix</title>
+    <title>Le Juste Chiffre</title>
 </head>
+
 <body>
-    <div class="game">
-        <img class="bandeau" src="./img/lagaf.jpg" alt="justeprix">
-        <br>
-        <button id="beginGame"><i class="fa-solid fa-play"></i></button>
-    </div>
-    <br>
-    <div id="gamePropalDiv">
-        <div>( 0 - 50 )</div>
-        <input type="number" id="userPropalInput">
-        <button id="checkPropalButton">Go</button>
-    </div>
-    <div id="resultDiv"></div>
-    <br>
-    <div id="compteARebours" class="reboursDiv"></div>
+    <header>
+        <h1>Le Juste Chiffre</h1>
+        <h2>Trouver le bon chiffre en moins de 20 secondes</h2>
+    </header>
+
+    <main class="game">
+        <button id="beginGame"><i class="fa-solid fa-play"> Play</i></button>
+
+        <div id="gamePropalDiv">
+            <div class="interval">( 0 - 50 )</div>
+            <input type="number" id="userPropalInput">
+            <button id="checkPropalButton">Go</button>
+        </div>
+
+        <div id="resultDiv"></div>
+
+        <div id="compteARebours" class="reboursDiv"></div>
+    </main>
 
     <footer>
         <div class="returnHome"><a href="../index.html">retour accueil</a></div>
@@ -32,4 +40,5 @@
 
     <script type="module" src="./justeprix.js"></script>
 </body>
+
 </html>

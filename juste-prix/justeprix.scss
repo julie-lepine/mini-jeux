@@ -1,55 +1,175 @@
 body {
-  max-width: 500px;
-  margin: auto;    
-  padding: 5svh;
+    background-color: #B5ACBC;
+    margin: auto;
+    font-family: Quicksand, sans-serif;
 }
 
-.game {
+header {
+    margin: 2rem auto;
+    width: 50%;
     text-align: center;
-}
 
-.bandeau {
-    max-height: 50svh;
-}
-
-#beginGame {
-    cursor: pointer;
-    font-size: 2rem;
-    background-color: #687cfa;
-    border: 3px solid;
-    padding: 4svh;
-    border-radius: 20px 7px;
-    margin: 2svh 0;
-}
-
-.reboursDiv {
-    display: inline-block;
-}
-
-.danger {
-    color: red;
-    animation: suspens 1s infinite;
-}
-
-@keyframes suspens {
-    0%, 100% {
-        font-size: 15px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
     }
-    50% {
+
+    h1 {
+        color: #604280;
+    }
+
+    h2 {
+        border-bottom: 2px solid #604280;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+}
+
+main {
+    max-width: 500px;
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
+    #beginGame {
+        align-items: center;
+        background-color: initial;
+        background-image: linear-gradient(rgba(190, 176, 199, .84), rgba(96, 66, 128, .84) 50%);
+        border-radius: 42px;
+        border-width: 0;
+        box-shadow: rgba(96, 66, 128, 0.24) 0 2px 2px, rgba(181, 172, 188, 0.4) 0 8px 12px;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: flex;
+        font-family: Quicksand, sans-serif;
         font-size: 18px;
+        font-weight: 700;
+        justify-content: center;
+        letter-spacing: .04em;
+        line-height: 16px;
+        width: 100%;
+        margin: 1rem 0 3rem 0;
+        padding: 18px 18px;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: rgba(190, 176, 199, 0.4) 0 0 4px, rgba(190, 176, 199, 0.2) 0 0 12px, rgba(96, 66, 128, 0.6) 1px 1px 4px, rgba(96, 66, 128, 0.32) 4px 4px 16px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: baseline;
+
+        &:hover {
+            background-image: linear-gradient(#B384C9, #391F5B 50%);
+        }
+
+        @media (min-width: 768px) {
+            #beginGame {
+                font-size: 21px;
+                padding: 18px 34px;
+            }
+        }
     }
 
+    #gamePropalDiv {
+        /*display: none;*/
+        text-align: center;
+
+        .interval {
+            margin: 1rem 0;
+            font-weight: bold;
+        }
+
+        #userPropalInput {
+            height: 25px;
+
+            /* cacher les flèches sur l'input */
+            &::-webkit-inner-spin-button,
+            &::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+            }
+
+            &[type=number] {
+                -moz-appearance: textfield;
+            }
+        }
+    }
+
+    #checkPropalButton {
+        background-color: #fbeee0;
+        border: 2px solid #422800;
+        border-radius: 30px;
+        box-shadow: #422800 4px 4px 0 0;
+        color: #422800;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 18px;
+        min-width: 50px;
+        line-height: 30px;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    #checkPropalButton:hover {
+        background-color: #fff;
+    }
+
+    #checkPropalButton:active {
+        box-shadow: #422800 2px 2px 0 0;
+        transform: translate(2px, 2px);
+    }
+
+    @media (min-width: 768px) {
+        #checkPropalButton {
+            min-width: 60px;
+        }
+    }
+
+    .reboursDiv {
+        display: inline-block;
+    }
+
+    .danger {
+        color: red;
+        animation: suspens 1s infinite;
+    }
+
+    @keyframes suspens {
+
+        0%,
+        100% {
+            font-size: 15px;
+        }
+
+        50% {
+            font-size: 18px;
+        }
+    }
+
+    .warning {
+        color: rgb(175, 114, 1);
+    }
+
+    .ok {
+        color: green;
+    }
 }
 
-.warning {
-    color: orange;
-}
+footer {
+    text-align: center;
 
-.ok {
-    color: green;
+    a {
+        font-size: 1.3rem;
+        color: #612F49;
+    }
 }
-
-#gamePropalDiv {
-    display: none;
-}
-

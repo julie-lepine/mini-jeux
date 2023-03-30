@@ -61,7 +61,7 @@ function launchGame() {
     compteurInterval = setInterval(() => {
         reboursDiv.innerText = tempsRestant + ' seconde(s)'
         tempsRestant--
-        if (tempsRestant >= 20) {
+        if (tempsRestant >= 15) {
             reboursDiv.classList.add('ok')
         } else if (tempsRestant >= 10) {
             reboursDiv.classList.remove('ok')
