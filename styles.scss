@@ -1,9 +1,159 @@
 .returnHome {
     margin: 4rem auto;
+
     a {
         text-decoration: none;
     }
+
     &:hover {
         text-decoration: underline;
     }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.indexHeader {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .card {
+        width: 200px;
+        height: auto;
+
+        .cardHeader {
+            text-align: center;
+            
+            h2 {
+                margin: 0;
+            }
+        }
+        
+        .cardContent {
+            text-align: center;
+            padding: 0 1rem;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                padding: 1.3rem 0;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+
+        }
+
+        .cardFooter, .cardHeader { 
+            text-align: center;
+            padding: 1rem;
+            .fa-play {
+                color: black!important;
+            }
+        }
+    }
+}
+
+/* INDEX FOOTER */
+.indexFooter, .indexHeader {
+    height: 7svh;
+    font-size: 1.5rem;
+    background-color: #a753379a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indexFooter {
+    margin-top: 2rem;
+    a {
+        text-decoration: none;
+        color: #383438;
+        font-weight: 600;
+    }
+}
+
+/* couleurs des cartes */
+/* le juste chiffre */
+.cardJC {
+    background-color: #B5ACBC;
+}
+.cardHeaderJC {
+    border-bottom: 1px solid #383438;
+    background-color: #604280;
+}
+.cardFooterJC {
+    border-top: 1px solid #383438; 
+    background-color: #604280;
+}
+/* le pendu */
+.cardP {
+    background-color: #9cc491;
+}
+.cardHeaderP {
+    border-bottom: 1px solid #787146;
+    background-color: #9A7B4E;
+}
+.cardFooterP {
+    border-top: 1px solid #787146; 
+    background-color: #9A7B4E;
+}
+/* le pendu */
+.cardCM {
+    background-color: #ab9071;
+}
+.cardHeaderCM {
+    border-bottom: 1px solid #79714f;
+    background-color: #EADD79;
+}
+.cardFooterCM {
+    border-top: 1px solid #79714f; 
+    background-color: #EADD79;
+}
+/* le memory */
+.cardMMY {
+    background-color: #FFB6B3;
+}
+.cardHeaderMMY {
+    border-bottom: 1px solid #79714f;
+    background-color: #966cb7;
+}
+.cardFooterMMY {
+    border-top: 1px solid #79714f; 
+    background-color: #966cb7;
+}
+/* le mastermind */
+.cardMSM {
+    background-color: #969779;
+}
+.cardHeaderMSM {
+    border-bottom: 1px solid #800080;
+    background-color: #a7d89e;
+}
+.cardFooterMSM {
+    border-top: 1px solid #800080; 
+    background-color: #a7d89e;
+}
+/* le PERFECT GAME */
+.cardPG {
+    background-color: white;
+}
+.cardHeaderPG {
+    border-bottom: 1px solid purple;
+    background-color: lightgrey;
+}
+.cardFooterPG {
+    border-top: 1px solid purple; 
+    background-color: lightgrey;
 }

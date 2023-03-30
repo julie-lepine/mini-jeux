@@ -1,21 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Site de mini-jeux</title>
 </head>
-<body>
-    <h1>Listes des mini-jeux : </h1>
-    <div><a href="./juste-prix/justeprix.html">Le Juste prix</a></div>
-    <div><a href="./pendu/pendu.html">Le Pendu</a></div>
-    <div><a href="./calcul-mental/calcul.html">Challenge calcul mental</a></div>
-    <div><a href="./MEMORY/index.html">Memory Disney</a></div>
-    <div><a href="./mastermind/mastermind.html">Mastermiiiind</a></div>
-    <div><a href="./perfect-game/perfect-game.html">Le perfect game</a></div>
-    
+
+<body class="indexBody">
+    <header class="indexHeader">
+        <h1 class="indexH1">Listes des mini-jeux</h1>
+    </header>
+    <main class="indexMain">
+        <div class="card cardJC">
+            <div class="cardHeader cardHeaderJC">
+                <h2>Juste Chiffre</h2>
+            </div>
+            <div class="cardContent cardContentJC">
+                <a href="./juste-prix/justeprix.html"><img src="./img/jc.bmp" alt="juste-chiffre-img">
+            </div>
+            <div class="cardFooter cardFooterJC">
+                <i class="fa-solid fa-play"> Play</i></a>
+            </div>
+        </div>
+        <div class="card cardP">
+            <div class="cardHeader cardHeaderP">
+                <h2>Pendu</h2>
+            </div>
+            <div class="cardContent cardContentP">
+                <a href="./pendu/pendu.html"><img src="./img//pendu.bmp" alt="pendu-img">
+            </div>
+            <div class="cardFooter cardFooterP">
+                <i class="fa-solid fa-play"> Play</i></a>
+            </div>
+        </div>
+        <div class="card cardCM">
+            <div class="cardHeader cardHeaderCM">
+                <h2>Calcul mental</h2>
+            </div>
+            <div class="cardContent cardContentCM">
+                <a href="./calcul-mental/calcul.html"><img src="./img/calcul.bmp" alt="calcul-mental-img">
+            </div>
+            <div class="cardFooter cardFooterCM">
+                <i class="fa-solid fa-play"> Play</i></a>
+            </div>
+        </div>
+        <div class="card cardMMY">
+            <div class="cardHeader cardHeaderMMY">
+                <h2>Memory Disney</h2>
+            </div>
+            <div class="cardContent cardContentMMY">
+                <a href="./MEMORY/index.html"><img src="./img/mmr.bmp" alt="memory-img">
+            </div>
+            <div class="cardFooter cardFooterMMY">
+                <i class="fa-solid fa-play"> Play</i></a>
+            </div>
+        </div>
+        <div class="card cardMSM">
+            <div class="cardHeader cardHeaderMSM">
+                <h2>Mastermind</h2>
+            </div>
+            <div class="cardContent cardContentMSM">
+                <a href="./mastermind/mastermind.html"><img src="./img/mstermind.bmp" alt="mastermind-img">
+            </div>
+            <div class="cardFooter cardFooterMSM">
+                <i class="fa-solid fa-play"> Play</i></a>
+            </div>
+        </div>
+        <div class="card cardPG">
+            <div class="cardHeader cardHeaderPG">
+                <h2>Perfect Game</h2>
+            </div>
+            <div class="cardContent cardContentPG">
+                <a href="./perfect-game/perfect-game.html"><img src="./img/pg.bmp" alt="perfect-game-img">
+            </div>
+            <div class="cardFooter cardFooterPG">
+                <i class="fa-solid fa-play"> Play</i></a>
+            </div>
+        </div>
+    </main>
+    <footer class="indexFooter">
+        <p class="">By <a href="https://www.linkedin.com/in/julie-lepine/" target="_blank" class="">July</a>
+            <img src="./img/flower.png" height="18" alt="flower">,
+            2023.
+        </p>
+    </footer>
     <script src="./script.js"></script>
 </body>
+
 </html>

@@ -125,8 +125,13 @@ main #checkPropalButton:active {
     min-width: 60px;
   }
 }
+main #resultDiv {
+  margin: 1rem 0;
+  transition: all 3s;
+}
 main .reboursDiv {
   display: inline-block;
+  margin: 1rem 0;
 }
 main .danger {
   color: red;

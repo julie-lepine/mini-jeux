@@ -77,6 +77,13 @@ body h1 {
   padding-bottom: 1rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #newGameBtn {
   text-align: center;
   display: inline-block;
@@ -117,6 +124,8 @@ body h1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  max-width: 60%;
+  gap: 15px;
 }
 
 .perso {
