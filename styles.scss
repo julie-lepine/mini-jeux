@@ -60,6 +60,10 @@ main {
             padding: 1rem;
             .fa-play {
                 color: black!important;
+                
+                &:hover { 
+                    transform: scale(1.2);
+                }
             }
         }
     }

@@ -54,6 +54,9 @@ main .card .cardFooter, main .card .cardHeader {
 main .card .cardFooter .fa-play, main .card .cardHeader .fa-play {
   color: black !important;
 }
+main .card .cardFooter .fa-play:hover, main .card .cardHeader .fa-play:hover {
+  transform: scale(1.2);
+}
 
 /* INDEX FOOTER */
 .indexFooter, .indexHeader {
