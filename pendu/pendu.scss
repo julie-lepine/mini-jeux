@@ -1,0 +1,191 @@
+body {
+    background-color: #9cc491;
+}
+
+header {
+    margin: 2rem auto;
+    width: 50%;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
+    h1 {
+        color: #9A7B4E;
+    }
+
+    h2 {
+        border-bottom: 2px solid #787146;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+}
+
+main {
+    max-width: 500px;
+    width: 50%;
+    margin: 2rem auto;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+
+    .init {
+        margin: 2rem 1rem;
+
+        #beginGame {
+            padding: 0.6em 1.3em;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            background: #111;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+
+            &:before {
+                content: "";
+                background: linear-gradient(72deg,
+                        #baebad,
+                        #b4a080,
+                        #b1a662,
+                        #cfa15b,
+                        #b85b8b);
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                background-size: 400%;
+                z-index: -1;
+                filter: blur(5px);
+                -webkit-filter: blur(5px);
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                animation: glowing-button-85 20s linear infinite;
+                transition: opacity 0.3s ease-in-out;
+                border-radius: 10px;
+
+                @keyframes glowing-button-85 {
+                    0% {
+                        background-position: 0 0;
+                    }
+
+                    50% {
+                        background-position: 400% 0;
+                    }
+
+                    100% {
+                        background-position: 0 0;
+                    }
+                }
+
+                #beginGame:after {
+                    z-index: -1;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: #222;
+                    left: 0;
+                    top: 0;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    .errors {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        justify-content: center;
+
+        #cptErreurs {
+            margin: 0 auto;
+        }
+    }
+
+    table {
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 1em;
+        margin-top: 0.5em;
+    }
+    
+    #keyboard {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: #9A7B4E;
+
+        .letterKeyboard {
+            border: 1px solid black;
+            padding: 0.5em 0.9em;
+            margin: 0.2em;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #8C7C62;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+
+    a {
+        font-size: 1.3rem;
+        color: #612F49;
+    }
+}
+
+/* HANGMAN'S SPRITE */
+#imgPenduDiv {
+    background: url('./sprite.png');
+    width: 145px;
+    height: 184px;
+    margin: 0.5em auto;
+}
+
+#imgPenduDiv.etat0 {
+    background-position: -0px;
+}
+
+#imgPenduDiv.etat1 {
+    background-position: -143px;
+}
+
+#imgPenduDiv.etat2 {
+    background-position: -285px;
+}
+
+#imgPenduDiv.etat3 {
+    background-position: -428px;
+}
+
+#imgPenduDiv.etat4 {
+    background-position: -570px;
+}
+
+#imgPenduDiv.etat5 {
+    background-position: -713px;
+}
+
+#imgPenduDiv.etat6 {
+    background-position: -856px;
+}
+
+#imgPenduDiv.etat6 {
+    background-position: -999px;
+}

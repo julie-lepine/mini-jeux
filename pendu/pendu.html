@@ -10,20 +10,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../styles.css">
     <title>Jeu du pendu</title>
 </head>
 
 <body>
-    <main>
+    <header>
         <h1>Jeu du pendu</h1>
         <h2>Devinez le mot choisi</h2>
-        <p><i class="fa-solid fa-triangle-exclamation"></i> Vous n'avez que 6 essais <i class="fa-solid fa-triangle-exclamation"></i></p>
-        <button id="beginGame"><i class="fa-solid fa-play"></i> Jouer</button>
-        <span id="cptErreurs"></span>
-        <div id="imgPenduDiv" class="etat0"></div>
+    </header>
+    
+    <main>
+        <div class="init">
+            <button id="beginGame">Jouer</button>
+        </div>
+
+        <div class="errors">
+            <span id="cptErreurs"></span>
+            <div id="imgPenduDiv" class="etat0"></div>
+        </div>
+        
         <div id="wordToFindDiv"></div>
             <div id="keyboard"></div>
     </main>
+
+    <footer>
+        <div class="returnHome"><a href="../index.html">retour accueil</a></div>
+    </footer>
     <script type="module" src="./pendu.js"></script>
 </body>
 
