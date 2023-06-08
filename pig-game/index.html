@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Jeu du cochon</title>
+</head>
+<body>
+  <header>
+    <p class="rules">Règles</p>
+    <div class="modal hidden">
+      <div class="close-modal-div">
+        <button class="close-modal">&times;</button>
+      </div>
+      <h3>Règles du jeu</h3>
+      <p>Deux joueurs peuvent jouer à ce jeu. <br> Le but est d'être le premier à arriver aux <span class="highlight">100</span> points. <br> Pour ce faire, à chaque tour, le joueur devra lancer son dé et cumuler les scores autant de fois qu'il le souhaite. <span class="highlight">Attention</span> ! Tomber sur un <span class="highlight">1</span> annule directement les points accumulés et passe la main au second joueur. <br> Have fun !</p>
+    </div>
+  </header>
+  <!-- METTRE LES REGLES DANS UNE MODAL -->
+  <main>
+    <section class="player-0 active-player">
+        <h2 class="names name-0">Joueur 1</h2>
+        <p class="total-score total-score-p0">0</p>
+        <div class="current-score-div">
+          <p class="current-score-el">Score actuel</p>
+          <p class="current-score current-score-0">0</p>
+        </div>
+    </section>
+    <section class="player-1">
+        <h2 class="names name-1">Joueur 2</h2>
+        <p class="total-score total-score-p1">0</p>
+        <div class="current-score-div">
+          <p class="current-score-el">Score actuel</p>
+          <p class="current-score current-score-1">0</p>
+        </div>
+    </section>
+    <img src="./dice-1.png" alt="dé n°1" class="dice hidden">
+    <button class="btn restart-btn">🔃 Recommencer une partie</button>
+    <button class="btn launch-btn">🎲 Lancer le dé</button>
+    <button class="btn keep-btn">📥 Conserver les points</button>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>

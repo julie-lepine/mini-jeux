@@ -42,7 +42,6 @@ function checkPropal() {
     } else if (numberToFind == numberPropal) {
         resultDiv.innerHTML = "C'est gagné !"
         endGame(true)
-        //document.getElementById('beginGame').style.display = "block"
     }
 }
 
@@ -51,8 +50,7 @@ function launchGame() {
     Confetti.stopAnimationConfetti()
     // récupérer chiffre alétoire
     numberToFind = Utils.getRandomInt(50)
-    // essai pour afficher dans le html le chiffre max 
-    //console.log(numberToFind.splice(1)); le pb de ça est que ça risque de changer la valeur de numberToFind
+
     tempsRestant = 20
     gamePropalDiv.style.display = "block"
     if (compteurInterval != null) {
