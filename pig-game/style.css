@@ -38,7 +38,6 @@ body {
 
 /* MAIN SECTION */
 main {
-  height: 60%;
   margin: 2rem 6rem;
   border: 1px solid black;
   border-radius: 20px;
@@ -181,4 +180,13 @@ section {
 
 .modal h3 {
   margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+}
+footer a {
+  font-size: 1.3rem;
+  color: #612F49;
 }
