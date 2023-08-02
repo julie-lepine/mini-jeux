@@ -1,0 +1,3 @@
+- pig game : fixing the height of the texts, the main margins to make them resp
+- pig game : fixing the esc pb on the modal
+- wtf les règles sont pas bien placées
